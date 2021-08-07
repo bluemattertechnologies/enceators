@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
 * {
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-  body{
-      overflow: hidden;
-  }
+    font-family: 'Cabin', sans-serif; 
+}
+body{
+    overflow: hidden;
+}
 
 .container{
     height: 100vh;
@@ -27,11 +28,26 @@
 
 .overlay{
     position: relative;
-    
     height: 100%;
     width: 100%; 
 }
 
+.cursor{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: red;
+    transition: 0.1s;
+    transform :translate(-50%,-50%);
+    pointer-events: none;
+    mix-blend-mode:difference;
+    z-index: 9999;
+}
+
+a:hover~.cursor{
+    transform: scale(5);
+}
 /* *****************************/
 
 

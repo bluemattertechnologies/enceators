@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(event){
 
-
-  setTimeout(function() {
     // array with texts to type in typewriter
     var dataText = [ "Power House of YouTube."];
     
@@ -11,7 +9,7 @@ document.addEventListener('DOMContentLoaded',function(event){
       // chekc if text isn't finished yet
       if (i < (text.length)) {
         // add next character to h1
-      document.getElementById("head1").value = text.substring(0, i+1);
+      document.getElementById("head1").innerHTML = text.substring(0, i+1);
       autocomplete(document.getElementById("head1"), countries);
       
       setTimeout(function() {
@@ -49,6 +47,6 @@ document.addEventListener('DOMContentLoaded',function(event){
     }
     // start the text animation
     StartTextAnimation(0);
-  }, 2000);
+  
 });
   
