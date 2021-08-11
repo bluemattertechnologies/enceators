@@ -1,3 +1,5 @@
+
+
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 *:hover{
@@ -13,7 +15,7 @@
   width: 50%;
   color: #ffffff;
   text-align: center;
-    padding-top: 10%;
+  padding-top: 10%;
   height: 100%;
   border:none;
 }
@@ -31,7 +33,6 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 5%;
-  
   position: absolute;
   left: 0;
 }
@@ -82,3 +83,118 @@
   color:#2E3434;
   text-decoration:none;
 }
+
+/* ************************** */
+.plan .row{
+  display: flex;
+  justify-content: left;
+}
+.plan .row .card {
+
+  display: flex;
+  height: 500px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.plan .row  .card:not(:first-child) {
+    margin-left: -5px;
+}
+
+
+@media only screen and (max-width: 659px) {
+  .plan .row  .card:not(:first-child) {
+    margin-left: -50px;
+}
+}
+.plan .row  .card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.plan .row .card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.plan .row .title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.plan .row  .bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.plan .row .emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.plan .row .filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.plan .row .card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.plan .row .circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+  opacity: 0;
+}
+
+.plan .row .stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+.plan .row svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.plan .row .card:hover .circle {
+  animation: fadeIn 2s ;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+.plan .row  .card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
