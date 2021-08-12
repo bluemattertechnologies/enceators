@@ -1,0 +1,73 @@
+
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://images.pexels.com/photos/1443657/pexels-photo-1443657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center no-repeat;
+    background-size: cover; 
+    color: #fff;
+}
+
+.about {
+    height: 300vh;
+    display: flex;
+}
+
+.about-title {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0!important;
+}
+
+.about-pages {
+    width: 50%;
+}
+
+.about-pages div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.about-pages div> p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.about-pages div:nth-child(1) {
+    /* background: url("https://cdn.pixabay.com/photo/2018/03/28/09/44/document-3268750_960_720.jpg") center no-repeat; */
+    background-color: black;
+    background-size: cover;
+}
+
+.about-pages div:nth-child(2) {
+    background: url("https://cdn.pixabay.com/photo/2018/11/01/05/33/british-columbia-3787200_960_720.jpg") center no-repeat;
+    /* background-color: black; */
+    
+    background-size: cover;
+}
+
+.about-pages div:nth-child(3) {
+    /* background: url("https://cdn.pixabay.com/photo/2016/03/04/19/36/beach-1236581_960_720.jpg") center no-repeat; */
+    background-color: black;
+    
+    background-size: cover;
+}
+
+footer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5e5;
+}
