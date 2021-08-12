@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Cabin', sans-serif; 
+}
+body{
+    overflow: hidden;
+    background-color: white;
+}
+
+.body{
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.cursor{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: red;
+    transition: 0.1s;
+    transform :translate(-50%,-50%);
+    pointer-events: none;
+    mix-blend-mode:difference;
+    z-index: 9999;
+}
+
+img:hover ~.cursor{
+    background: rgb(255, 255, 255);
+
+    /* transform: scale(5); */
+}
+.play-video{
+    display: flex;
+}
+.play-video video{
+    width: 100%;
+}
+/* *****************************/
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+}
+/* for fading 00:00 */
+
