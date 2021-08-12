@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encreators</title>
+
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+       <link rel="stylesheet" href="css/main.css"> 
+       <link rel="stylesheet" href="css/m2.css"> 
+       <link rel="stylesheet" href="css/card.css"> 
+       <link rel="stylesheet" href="css/article.css"> 
+       <link rel="stylesheet" href="css/social.css"> 
+       <link rel="stylesheet" href="css/search.css"> 
+       <link rel="stylesheet" href="css/v-testi.css"> 
+       <link rel="stylesheet" href="css/navbar.css"> 
+       <link rel="stylesheet" href="style2.css"> 
+    
+
+       <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   
+       <!-- Optional JavaScript -->
+       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+       <script src="js/main.js"></script>
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+
+       
+       <link rel="stylesheet" href="css/card.css">
+       <script src="js/bootstrap.min.js"></script>
+       <script src="js/Search.js"></script>
+       <script src="https://unpkg.com/scrollreveal"></script>
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+       <script>
+         AOS.init();
+       </script>
+
+</head>
+
+
+
+<style>
+    .container-fluid {
+        overflow: hidden;
+        /* background: #262626; */
+        color: #627482 !important;
+        margin-bottom: 0;
+        padding-bottom: 0
+    }
+    
+    small {
+        font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+    }
+    
+    .bold-text {
+        color: #989c9e !important
+    }
+    
+    .mt-55 {
+        margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+    }
+    
+    h3 {
+        font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+    }
+    
+    .social {
+        font-size: 21px !important
+    }
+    
+    .rights {
+        font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+    }
+
+    /* ***************/
+    .newsletter .row{
+        padding: 10%;
+    }
+    .newsletter .col-6{
+        padding: 0;
+    }
+    .newsletter .col-6 input{
+        height: 3em;
+        width: 50%;
+        border-width: 1px;
+    }
+    /* .newsletter .col-5{
+        padding: 0;
+    } */
+    .newsletter .col-6 button{
+        height: 3em;
+        background-color: red;
+        border: none;
+        color: white;
+        width: 200px;
+    }
+    .newsletter .col-6 button label{
+        font: 1em sans-serif;
+    }
+
+</style>
+
+<body>
+    <div class="body">
+        <!-- <div class="main0" style="height: 45vh; min-height: 500px; background-color: white;  border-color: red; border-top: 1em; overflow: hidden; ">  
+            <div  style="background-color: #ff0000; height: 10px;">
+            </div>
+
+            <div class="d-flex justify-content-between" style="margin-right: 50px; margin-left: 50px; margin-top: 30px;">
+                <div>
+                    <img src="images/text-logo.svg" alt=""  style="width: 150px;">
+                </div>
+                <div>
+                    <img src="images/xs.svg" alt=""  style="width: 35px;">
+                </div>
+            </div>
+
+            <div  style="margin-right: 50px; margin-left: 50px; margin-top: 70px; max-width: 420px;">
+                
+                <h1 id="head1" style="font-weight: 900; font-size: 3.5em; " > Power House of <br> YouTube. </h2>
+                
+              <a href=""> <p style="font-weight: 300; font-size: 2em; color: black; "> <u> Here’s how →  </u></p> </a>
+            </div>
+        </div>
+        <div style="background-color: white; z-index: 2;">
+        <div class="play-video" >
+            <video  id="vid"  muted loop>
+                <source src="video/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        </div>
+         -->
+        
+         <div class="main0" style="height: 5vh; min-height: 100px; background-color: rgb(0, 0, 0);  border-color: red; border-top: 1em; overflow: hidden; ">  
+            <div class="row" style="height: 15px;  background-color: #ff0000;" >
+            </div>
+            
+            <div class="row" id="ham" style="background-color: #202020; padding-left: 20px; padding-right: 20px;">
+                <table>
+                    <tr>
+                        <td style="width: 20%; min-width: 150px;">
+                            <img src="images/logo-header.png" alt=""  style="width: 20%; min-width: 150px; padding: 15px;">
+                        </td>
+                        <td style="width: 60%;">
+                            <form autocomplete="off">
+                                <div style="width: 100%; display: table;">
+                                    <div style="display: table-row;">
+                                        
+                                        <div class="autocomplete" style="width: 75%; display: table-cell;">
+                                            <input id="head1" class="ffa" type="text" placeholder="Search" >
+                                        </div>
+                                        <div style="display: table-cell;"> 
+                                            <button class="search">
+                                                <i   class="material-icons">search</i></button>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </form>
+                        </td>
+                        <td style="width: 20%;" >
+                            <img src="images/xs.svg" alt="" id="hamburger"  style="width: 10%; min-width: 70px; padding: 15px; float: right;">
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+                        
+            <input type="checkbox" id="active"style="z-index: 11;">
+            <label for="active" id="menu-btn" class="menu-btn" onclick="mouseOver()" style="z-index: 11; opacity: 0;"><span></span></label>
+            <label for="active" class="close" style="z-index: 11;"></label>
+            <div class="wrapper" id="wrapper" style="z-index: 10;">
+                <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Feedback</a></li>
+            </ul>
+            <img src="/images/logo-black.png">
+            </div>
+        </div>
+        
+        <div class="main1" style=" background-color: black;">
+
+            <div class="mContainer"   >
+
+                <div class="row" style="padding-top: 20px;"> 
+                    <div class="col-md-9">
+
+                        <div class="play-video">
+                                <video  id="vid" autoplay muted loop>
+                                    <source src="video/video.mp4" type="video/mp4">
+                                </video>    
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="padding-top: 30px;" >
+                        
+                        <div class="row d-flex justify-content-center" style="margin-bottom: 15px;">
+                            <div class="card profile-card-1">
+                                    <img src="images/43-434437_red-and-black-blur-background.jpg" alt="profile-sample1" class="background"/>
+                                       
+                            </div>
+                            <div class="card-content" style="flex: 1;">
+                                <h2 class="text-white" style="font-size:1.5em;">Lorem Ipsum<small></small></h3>
+                                    <h2 class="text-white" style="font-size:.7em;">Lorem Ipsum<small></small></h3>
+                            
+                            </div>
+                        </div>
+
+                        
+                        <div class="row d-flex justify-content-center" style="margin-bottom: 15px;">
+                            <div class="card profile-card-1">
+                                    <img src="images/43-434437_red-and-black-blur-background.jpg" alt="profile-sample1" class="background"/>
+                                       
+                            </div>
+                            <div class="card-content" style="flex: 1;">
+                                <h2 class="text-white" style="font-size:1.5em;">Lorem Ipsum<small></small></h3>
+                                    <h2 class="text-white" style="font-size:.7em;">Lorem Ipsum<small></small></h3>
+                            
+                            </div>
+                        </div>
+
+                        
+                        <div class="row d-flex justify-content-center" style="margin-bottom: 15px;">
+                            <div class="card profile-card-1">
+                                    <img src="images/43-434437_red-and-black-blur-background.jpg" alt="profile-sample1" class="background"/>
+                                       
+                            </div>
+                            <div class="card-content" style="flex: 1;">
+                                <h2 class="text-white" style="font-size:1.5em;">Lorem Ipsum<small></small></h3>
+                                    <h2 class="text-white" style="font-size:.7em;">Lorem Ipsum<small></small></h3>
+                            
+                            </div>
+                        </div>
+
+    
+                        
+                        <div class="row d-flex justify-content-center" style="margin-bottom: 15px;">
+                            <div class="card profile-card-1">
+                                    <img src="images/43-434437_red-and-black-blur-background.jpg" alt="profile-sample1" class="background"/>
+                                       
+                            </div>
+                            <div class="card-content" style="flex: 1;">
+                                <h2 class="text-white" style="font-size:1.5em;">Lorem Ipsum<small></small></h3>
+                                    <h2 class="text-white" style="font-size:.7em;">Lorem Ipsum<small></small></h3>
+                            
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div style="background-color: black;">
+        </div>
+        
+        <div style="width: 100%; background-color: red;">
+            <img class="banner" src="images/banner final (1).jpg" alt="" style="z-index: 99999; width: 100%;">
+        </div>
+
+        <div class="plan" style="height: 100vh; min-height: 800px; padding-top: 10%; padding-left: 10%; z-index: 2; background-color: white;">
+         <div class="row" >
+        
+            <div class="card">
+                <h3 class="title">Plan 1</h3>
+                <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                <p style="color: rgb(255, 255, 255);">Lorem ipsum dolor <br> sit amet, consectetur adipisicing <br>elit. Rem, facere, saepe adipis<br>ci est labore distinctio exceptur<br>i voluptatum provident ut evenie<br>t sunt illum voluptates? <br>Cumque harum animi moles<br>tiae facilis rerum. Minus.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="title">Plan 2</h3>
+                <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                <p style="color: rgb(255, 255, 255);">Lorem ipsum dolor <br> sit amet, consectetur adipisicing <br>elit. Rem, facere, saepe adipis<br>ci est labore distinctio exceptur<br>i voluptatum provident ut evenie<br>t sunt illum voluptates? <br>Cumque harum animi moles<br>tiae facilis rerum. Minus.</p>
+        
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="title">Plan 3</h3>
+                <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                <p style="color: rgb(255, 255, 255);">Lorem ipsum dolor <br> sit amet, consectetur adipisicing <br>elit. Rem, facere, saepe adipis<br>ci est labore distinctio exceptur<br>i voluptatum provident ut evenie<br>t sunt illum voluptates? <br>Cumque harum animi moles<br>tiae facilis rerum. Minus.</p>
+         
+                </div>
+            </div>
+
+            <div class="col align-self-center" style="text-align: center; margin-top: 20px;">
+                <h2 style="font-size: 3em;">Our Plans</h2>
+
+            </div>
+        </div>
+            
+        
+        </div>
+
+        <section class="about" style="z-index: 2; background-color: white;">
+            <div class="about-title">
+                <h2>Our Services</h2>
+            </div>
+    
+            <div class="about-pages">
+                <div>
+                    <h2>Service 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit 
+                        dignissimos aspernatur numquam ut libero inventore quas quod, 
+                        hic perferendis, tenetur magni laudantium asperiores dolor
+                         voluptas est dolore suscipit. Eos sit tenetur corporis fugiat, quisquam 
+                         fugit atque excepturi quaerat neque quia odit corrupti molestiae exercitationem
+                          tempore eum sapiente totam. Error.
+                    </p>
+                </div>
+                  <div>
+                      <h2>Service 2</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit
+                          dignissimos aspernatur numquam ut libero inventore quas quod,
+                          hic perferendis, tenetur magni laudantium asperiores dolor
+                          voluptas est dolore suscipit. Eos sit tenetur corporis fugiat, quisquam
+                          fugit atque excepturi quaerat neque quia odit corrupti molestiae exercitationem
+                          tempore eum sapiente totam. Error.
+                      </p>
+                  </div>
+                    <div style="background-color: red;">
+                        <h2>Service 2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit
+                            dignissimos aspernatur numquam ut libero inventore quas quod,
+                            hic perferendis, tenetur magni laudantium asperiores dolor
+                            voluptas est dolore suscipit. Eos sit tenetur corporis fugiat, quisquam
+                            fugit atque excepturi quaerat neque quia odit corrupti molestiae exercitationem
+                            tempore eum sapiente totam. Error.
+                        </p>
+                    </div>
+            </div>
+        </section>
+
+        <div class="v-testimonials" style="z-index: 2; height: 100vh; padding-top: 25vh; text-align: center; background-color: rgb(0, 0, 0);">
+            
+            <div class="contain">
+
+                <h1 style="color: white;">Word of Mouth</h1>
+              
+                <p style="color: rgb(189, 189, 189);">
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus explicabo neque sed veritatis nobis? Facere nulla rerum consequatur tempora ipsa beatae accusantium ab molestias ratione officia? Nesciunt animi aperiam rerum.
+                </p>
+                <div class="row" id="style-3">
+                  <div class="row__inner">
+              
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://dsqqu7oxq6o1v.cloudfront.net/preview-815913-Uy8pBYW66O-high.mp4" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+                          
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4#t=0.5" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+                          
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://dsqqu7oxq6o1v.cloudfront.net/preview-293443-picd1wnXSc-high.mp4" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+                          
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://dsqqu7oxq6o1v.cloudfront.net/preview-744323-POY5TOtxVQ-high.mp4" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+                          
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://dsqqu7oxq6o1v.cloudfront.net/preview-797426-bDKfLlPayA-high.mp4" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+                          
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://dsqqu7oxq6o1v.cloudfront.net/preview-1005844-nYhEdFdvUz-high.mp4" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+                          
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://dsqqu7oxq6o1v.cloudfront.net/preview-953270-ebMDgFtWeZ-high.mp4" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+                          
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4#t=0.5" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+                          
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4#t=0.5" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+                          
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4#t=0.5" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4#t=0.5" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+                          
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4#t=0.5" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4#t=0.5" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4#t=0.5" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="tile">
+                        <div class="tile__media">
+                            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"style=" width: 300px; height: 150px;"  preload="metadata">
+                                <source src="https://www.w3schools.com/html/mov_bbb.mp4#t=0.5" type="video/mp4">
+                            </video>    
+                        </div>
+                        <div class="tile__details">
+                            <div class="tile__title" style="padding-left: 30px;">
+                                Top Gear
+                            </div>
+                        </div>
+                    </div>
+              
+                  </div>
+                </div>
+            </div>
+           <img class="message1" src="images/message1.svg" alt="">
+        </div>
+        
+    <div class="curtain">
+        <div class="newsletter">
+            <div class="row d-flex justify-content-center" style="text-align: center; ">
+                     <h1>
+                         Enter your email to 
+                         <br>
+                         create or restart your membership.
+                     </h1>   
+                 <div class="col-6 d-flex justify-content-end" style="margin-top:5em;">
+                     <input type="text" name="" id="" placeholder="Enter email">
+                 </div>
+                 <div class="col-6 d-flex justify-content-start"style="margin-top:5em;">
+                     <button>
+                         <label for="">Subscribe</label> 
+                     </button>
+                </div>
+            </div>
+         </div>
+    </div>  
+        <div class="reveal-main"></div>
+      <div class="main">
+    
+        <!-- <h1>Curtain Content</h1> -->
+        
+        <div class="container-fluid pb-0 mb-0  text-light ">
+            <footer>
+                <div class="row my-5 justify-content-center py-5">
+                    <div class="col-11">
+                        <div class="row ">
+                            <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                                <h3 class="text-muted mb-md-0 mb-5 bold-text">ENCREATORS.</h3>
+                            </div>
+                            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                                <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                                <ul class="list-unstyled" style="color: gray;">
+                                    <li>Home</li>
+                                    <li>About</li>
+                                    <li>Blog</li>
+                                    <li>Portfolio</li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                                <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                                <p class="mb-1">605, RATAN ICON BUILDING</p>
+                                <p>SEAWOODS SECTOR</p>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                                <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> bluematter All Rights Reserved.</small>
+                            </div>
+                            <!-- <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                                <h6 class="mt-55 mt-2 text-muted bold-text"><b>ANIRUDH SINGLA</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small>
+                            </div>
+                            <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                                <h6 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> rishab@gmail.com</small>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </footer>
+          </div>
+    
+    </div>
+
+    <script src="main2.js"></script>
+    </footer>
+        
+        </div>
+    </div>
+    
+    <div class="cursor"></div>
+</body>
+<script>
+    const cursor =document.querySelector('.cursor');
+    document.addEventListener('mousemove',(e)=>{
+    cursor.style.left= e.pageX +'px';
+    cursor.style.top= e.pageY +'px';
+})
+</script>
+<script src="js/animations.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+<script>
+function splitScroll(){
+const controller = new ScrollMagic.Controller();
+
+new ScrollMagic.Scene({
+    duration: '200%',
+    triggerElement: '.about-title',
+    triggerHook: 0
+})
+.setPin('.about-title')
+// .addIndicators()
+.addTo(controller);
+}
+
+splitScroll();
+</script>
+</html>
